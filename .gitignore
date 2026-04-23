@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv
+*.egg-info/
+
+# Data files (too large for git, reproducible from scripts)
+data/
+*.parquet
+*.csv.gz
+*.lz4
+*.json.gz
+
+# Keep these small CSVs (analysis outputs, not raw data)
+!output/cascade/recovery_panel.csv
+!output/cascade/intraday_oct10_spread.csv
+!output/cascade/intraday_oct10_depth.csv
+
+# Secrets and local configuration
+.env
+*.pem
+aws_credentials
+config.local.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Scratch / diagnostic scripts that aren't part of the pipeline
+diag_*.py
+patch_*.py
+
+# Compiled docs
+*.aux
+*.log
+*.out
+*.toc
+
+# OS
+Thumbs.db
+Desktop.ini

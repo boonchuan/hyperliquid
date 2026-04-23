@@ -1,0 +1,103 @@
+================================================================================
+CASCADE EVENT STUDY - STRUCTURED RESULTS FOR PAPER
+================================================================================
+
+--- TABLE A: Pre-event baselines (Oct 3-9, 2025) ---
+asset  n_minutes_pre  spread_pre_med  spread_pre_mean  depth_pre_med  rv_pre_med
+  BTC          10080        0.088493         0.097424   1.825661e+06    2.109354
+  ETH          10080        0.237829         0.247738   1.400559e+06    3.649272
+  SOL          10080        0.467207         0.479247   4.446531e+05    5.572107
+  XRP          10080        0.368920         0.384656   7.769574e+04    4.489985
+ DOGE          10080        0.562393         0.602162   2.813512e+04    6.456417
+
+--- TABLE B: Hourly cascade evolution (Oct 10 UTC) ---
+      median_spread  p95_spread  max_spread  median_depth  median_rv
+hour                                                                
+0             0.372       0.566       0.639    415715.538      3.426
+1             0.372       0.554       0.711    453841.358      3.439
+2             0.376       0.597       0.707    456252.412      3.959
+3             0.393       0.790       1.049    547059.422      5.408
+4             0.378       0.667       1.014    604670.323      4.591
+5             0.385       0.641       1.108    538775.417      4.169
+6             0.384       0.611       0.870    514392.357      4.302
+7             0.398       0.635       0.745    518866.408      5.200
+8             0.381       0.658       0.904    520120.343      4.365
+9             0.380       0.687       0.944    515446.873      3.989
+10            0.372       0.632       0.886    494502.681      3.582
+11            0.374       0.662       0.877    458346.362      3.311
+12            0.368       0.577       0.728    493768.888      3.436
+13            0.399       0.802       1.071    548613.907      6.640
+14            0.441       0.802       4.135    597182.016      7.267
+15            0.724       1.983       4.968    463643.145     16.604
+16            0.497       1.009       1.568    623943.753      9.891
+17            0.485       0.936       1.188    487329.067      8.988
+18            0.439       0.960       1.178    515261.718      8.037
+19            0.588       1.291       2.852    566483.138     12.781
+20            0.534       3.030      13.692    514912.521      8.662
+21            9.376      87.476     241.819    391473.243    150.621
+22            1.709      18.804      44.351    375291.237     42.464
+23            1.080       5.576       8.713    217889.163     31.144
+
+--- TABLE C: Recovery snapshots, all 5 assets ---
+
+  +1d (2025-10-11):
+    BTC: spread 0.1147 bps (1.30x pre), depth $   1,395,896 (0.76x pre)
+    ETH: spread 0.3355 bps (1.41x pre), depth $   1,201,123 (0.86x pre)
+    SOL: spread 0.6664 bps (1.43x pre), depth $     384,388 (0.86x pre)
+    XRP: spread 0.6703 bps (1.82x pre), depth $      62,987 (0.81x pre)
+    DOGE: spread 0.9980 bps (1.77x pre), depth $      28,392 (1.01x pre)
+
+  +7d (2025-10-17):
+
+  +14d (2025-10-24):
+    BTC: spread 0.0997 bps (1.13x pre), depth $   1,360,811 (0.75x pre)
+    ETH: spread 0.2719 bps (1.14x pre), depth $   1,082,347 (0.77x pre)
+    SOL: spread 0.5428 bps (1.16x pre), depth $     375,983 (0.85x pre)
+    XRP: spread 0.4464 bps (1.21x pre), depth $      57,145 (0.74x pre)
+    DOGE: spread 0.6066 bps (1.08x pre), depth $      22,664 (0.81x pre)
+
+  +30d (2025-11-09):
+    BTC: spread 0.1088 bps (1.23x pre), depth $   1,127,623 (0.62x pre)
+    ETH: spread 0.3157 bps (1.33x pre), depth $     812,500 (0.58x pre)
+    SOL: spread 0.6595 bps (1.41x pre), depth $     291,849 (0.66x pre)
+    XRP: spread 0.4811 bps (1.30x pre), depth $      54,520 (0.70x pre)
+    DOGE: spread 0.7109 bps (1.26x pre), depth $      21,317 (0.76x pre)
+
+  +51d (2025-11-30):
+    BTC: spread 0.1144 bps (1.29x pre), depth $   1,175,035 (0.64x pre)
+    ETH: spread 0.3419 bps (1.44x pre), depth $     682,104 (0.49x pre)
+    SOL: spread 0.7464 bps (1.60x pre), depth $     305,174 (0.69x pre)
+    XRP: spread 0.4758 bps (1.29x pre), depth $      43,537 (0.56x pre)
+    DOGE: spread 0.8006 bps (1.42x pre), depth $      13,858 (0.49x pre)
+
+--- TABLE D: Time to recovery thresholds ---
+Days to first reach spread within 1.1x, 1.2x, 1.5x of pre-event
+  BTC <= 1.1x: by 2025-10-25 (15d)
+  BTC <= 1.2x: by 2025-10-16 (6d)
+  BTC <= 1.5x: by 2025-10-11 (1d)
+
+  ETH <= 1.1x: by 2025-10-25 (15d)
+  ETH <= 1.2x: by 2025-10-16 (6d)
+  ETH <= 1.5x: by 2025-10-11 (1d)
+
+  SOL <= 1.1x: NEVER (last ratio 1.72x at 2025-12-15)
+  SOL <= 1.2x: by 2025-10-24 (14d)
+  SOL <= 1.5x: by 2025-10-11 (1d)
+
+  XRP <= 1.1x: NEVER (last ratio 1.48x at 2025-12-15)
+  XRP <= 1.2x: by 2025-10-25 (15d)
+  XRP <= 1.5x: by 2025-10-15 (5d)
+
+  DOGE <= 1.1x: by 2025-10-24 (14d)
+  DOGE <= 1.2x: by 2025-10-23 (13d)
+  DOGE <= 1.5x: by 2025-10-15 (5d)
+
+
+--- TABLE E: Asset-rank vs recovery (key cross-section) ---
+Approx. order of liquidity (BTC most, DOGE least)
+Persistent spread widening at +30d:
+  BTC  : + 23.0% spread vs pre, depth - 38.2% vs pre
+  ETH  : + 32.8% spread vs pre, depth - 42.0% vs pre
+  SOL  : + 41.2% spread vs pre, depth - 34.4% vs pre
+  XRP  : + 30.4% spread vs pre, depth - 29.8% vs pre
+  DOGE : + 26.4% spread vs pre, depth - 24.2% vs pre
